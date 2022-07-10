@@ -4,24 +4,24 @@ import Home from './pages/Home'
 import EditorPage from './pages/EditorPage';
 import {Toaster} from 'react-hot-toast';
 
-//import Test from './pages/Test';
+// import Test from './pages/Test';
 
 function App() {
   return (
     <>
-    <Toaster></Toaster>
+      <Toaster></Toaster>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/editor/:roomId" element={<EditorPage/>}></Route>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/editor/:roomId" element={<EditorPage />}></Route>
 
-        {/* For Testting purposes Only */}
-        {/* <Route path="/test" element={<Test/>}></Route> */}
-      </Routes>
-      
-      
+          {/* <Route path="/editor" element={<EditorPage />}></Route> */}
+
+          {/* For Testting purposes Only */}
+          {/* <Route path="/test" element={<Test/>}></Route> */}
+        </Routes>
       </BrowserRouter>
-      </>
+    </>
   );
 }
 
